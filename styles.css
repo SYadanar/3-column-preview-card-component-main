@@ -120,13 +120,13 @@ footer{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media only screen and (max-width:  375px){
+@media only screen and (max-width:  575px){
     body{
         height: 100%;
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 
     .btn-learn-more{
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 }
