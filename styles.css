@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* Primary */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+
+    background-color: var(--veryLightGray);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.row{
+    max-width: 54rem;
+
+    border-radius: 0.625rem;
+
+    overflow: hidden;
+}
+
+#sedans{
+    background-color: var(--brightOrange);
+}
+
+#suvs{
+    background-color: var(--darkCyan);
+}
+
+#luxury{
+    background-color: var(--veryDarkCyan);
+}
+
+#sedans, #suvs, #luxury{
+    color: var(--veryLightGray);
+
+    padding: 3rem 2.8rem;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+
+    padding: 1.875rem 0 0.9375rem;
+}
+
+p{
+    color: var(--transparentWhite);
+    line-height: 1.5rem;
+}
+
+.btn-learn-more{
+    background-color: var(--veryLightGray);
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: 0.625rem 1.6rem;
+    
+    transition-duration: 0.4s;
+}
+
+#sedans .btn-learn-more{
+    color: var(--brightOrange);
+}
+
+#suvs .btn-learn-more{
+    color: var(--darkCyan);
+}
+
+#luxury .btn-learn-more{
+    color: var(--veryDarkCyan);
+}
+
+#sedans .btn-learn-more:hover{
+    border: 1px solid var(--veryLightGray);
+    background-color: var(--brightOrange);
+    color: var(--veryLightGray);
+}
+
+#suvs .btn-learn-more:hover{
+    border: 1px solid var(--veryLightGray);
+    background-color: var(--darkCyan);
+    color: var(--veryLightGray);
+}
+
+#luxury .btn-learn-more:hover{
+    border: 1px solid var(--veryLightGray);
+    background-color: var(--veryDarkCyan);
+    color: var(--veryLightGray);
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
