@@ -118,3 +118,15 @@ footer{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width:  375px){
+    body{
+        height: 100%;
+        padding: 4rem 0;
+    }
+
+    .btn-learn-more{
+        margin-top: 1rem;
+    }
+}
